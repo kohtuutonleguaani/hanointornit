@@ -1,0 +1,20 @@
+Hanoin tornit
+
+Pelin tavoitteena on saada kaikki vasemmanpuolimmaisessa tapissa olevat kiekot siirrettyä jompaan kumpaan muuhun tappiin siten, että:
+-vain yhtä kiekkoa liikutetaan kerralla
+-kiekon voi laittaa vain tappiin (ei pöydälle)
+-isompaa kiekkoa ei saa laittaa pienemmän kiekon päälle
+
+Peliä voi pelata 2-20 kiekolla. Käyttäjä voi syöttää kenttään halutun kiekkomäärän, ja se asetetaan peliin painamalla ok. Syötteen täytyy olla järkevä, mutta väärä syöte ei kaada ohjelmaa. Oletusarvoisesti pelissä on kaksi kiekkoa. Tällä määrällä pelataan, jos syötettä ei anneta tai se on kelvoton tai käyttäjä ei paina ok, mutta painaa 'Aloita'.
+
+Kiekkoja liikutellaan napeilla A, B ja C siten, että ensimmäistä nappia klikkaamalla se jää pohjaan, ja toista nappia klikkaamalla kiekko siirtyy, minkä jälkeen molemmat napit nousevat ylös. Jos tapissa ei ole liikutettavaa kiekkoa, nappi ei jää pohjaan, eli tyhjästä napista ei yritetä siirtää. Vain sallitut siirrot ovat mahdollisia, sillä laittomien siirtojen napit poistetaan käytöstä. Jos pelaaja klikkaa uudelleen valittua nappia, se nousee ylös.
+
+Ohjelmassa on kaksi kokoaetusta, mutta käyttäjän ei tarvitse huolehtia niistä, vaan ne riippuvat käyttäjän valitsemasta kiekkomäärästä. Jos kiekkoja on korkeintaan kymmenen, tapit ovat lyhyemmät, ja kiekkojen kokoerot ovat hieman suuremmat. Jos taas kiekkoja on yli 10, tapit ovat pitkiä, ja kiekkojen kokoerot (leveyssuunnassa) pienemmät.
+
+Kun kiekkopino valitaan, liikutettava kiekko muuttuu keltaiseksi. Se muuttuu takaisin normaaliin väriinsä, kun siirto on tehty tai nappi ei ole enää pohjassa. Pelin voittaa, kun koko kiekkopino on joko apu- tai maalitapissa. Kun peli on voitettu, kiekkopino muuttuu violetiksi.
+
+Jokaisella tapilla on oma väri, ja kiekot vaihtavat väriään siirtyessään tapista toiseen.
+
+Reset-napilla pelin voi aloittaa uudelleen joko kesken pelin tai pelin päätyttyä. Reset-nappi tyhjää pelialueen, ja peli palaa odottamaan aloita-napin painamista.
+
+Pelissä on ajanotto, joka lähtee käyntiin, kun käyttäjä painaa Aloita-nappia. Kulunut aika näytetään kahdella numeronäytöllä minuutteina ja sekunteina. Kello pysähtyy, kun peli on voitettu. Jos pelaaja aloittaa uuden pelin Reset-napilla, myös ajanotto nollataan.
